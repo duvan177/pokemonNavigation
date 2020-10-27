@@ -12,7 +12,9 @@ export default function Root (){
 
     return(
         <NavigationContainer>
-            <AuthStak.Navigator>
+            <AuthStak.Navigator screenOptions={{
+               headerShown:false
+            }}>
                 <AuthStak.Screen name="Login" component={LoginContainer} />
                 <AuthStak.Screen name="Home" component={HomeContainer} />
             </AuthStak.Navigator>
